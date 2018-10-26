@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.stampe.MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/logo_w_h"
+        android:layout_height="@dimen/logo_w_h"
+        android:layout_gravity="center_horizontal"
+
+        android:src="@drawable/splash" />
+
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello!"
+            android:layout_marginVertical="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/btn_login_bg"
+            android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:fitsSystemWindows="true"
+        >
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:text="SCAN NOW!" />
+
+        <Button
+            android:id="@+id/btnStamp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_height="wrap_content"
+            android:text="YOUR STAMPS &amp; BENEFITS" />
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="onMap"
+            android:text="AVAILABLE STORE NEARBY" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_height="wrap_content"
+            android:text="PROFILE" />
+    </LinearLayout>
+
+
+</LinearLayout>
